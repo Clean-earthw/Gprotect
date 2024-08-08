@@ -15,6 +15,10 @@ from pip._vendor import cachecontrol
 import requests
 import google.generativeai as genai
 from dotenv import load_dotenv
+from tuned_model_creds import load_creds
+
+
+creds = load_creds()
 
 # creds = load_creds()
 
@@ -22,7 +26,8 @@ load_dotenv()
 GOOGLE_CLIENT_ID = os.environ.get('CLIENT_ID')
 
 genai.configure(
-    api_key=os.getenv("API_KEY"))
+    api_key=os.getenv("API_KEY"),
+    credentials=creds)
 
 app = Flask(__name__)
 app.secret_key = 'XT5PUdwqegbndhgfsbdvH5m79D'
