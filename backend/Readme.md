@@ -35,3 +35,11 @@ GProtect leverages advanced AI models from Google’s Gemini suite to detect pot
    ```bash
    git clone https://github.com/yourusername/gprotect.git
    cd gprotect
+
+2. **Create a virtual environment**
+3. 
+  ```bash
+python -m venv venv
+source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+
+2. 
