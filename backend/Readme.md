@@ -37,9 +37,36 @@ GProtect leverages advanced AI models from Google’s Gemini suite to detect pot
    cd gprotect
 
 2. **Create a virtual environment**
-3. 
+ 
   ```bash
 python -m venv venv
 source venv/bin/activate  # On Windows use `venv\Scripts\activate`
 
-2. 
+3. **Install dependencies**
+
+ ```bash
+pip install -r requirements.txt
+
+4.**Set up Google API credentials**
+
+# Set Up Google API Credentials
+
+Follow these steps to obtain and configure your Google API credentials:
+
+1. **Enable APIs and Services**:
+   - Visit the [Google Cloud Console](https://console.cloud.google.com/apis).
+   - Select your project or create a new one.
+   - Go to the **Library** tab.
+   - Search for and enable the **Gmail API** and any other required APIs.
+
+2. **Create OAuth 2.0 Credentials**:
+   - Navigate to the **Credentials** tab.
+   - Click **Create Credentials** and select **OAuth 2.0 Client ID**.
+   - Configure the OAuth consent screen if prompted.
+   - Select **Web application** as the application type.
+   - Add authorized redirect URIs if required.
+   - Download the JSON file containing your credentials.
+
+3. **Download Credentials**: Save the downloaded JSON file as `credentials.json` and place it in the root directory of the project.
+
+For detailed instructions on setting up OAuth 2.0 credentials, refer to the [Google OAuth 2.0 Documentation](https://developers.google.com/identity/protocols/oauth2).
