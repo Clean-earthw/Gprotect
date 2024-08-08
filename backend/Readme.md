@@ -47,7 +47,7 @@ source venv/bin/activate  # On Windows use `venv\Scripts\activate`
  ```bash
 pip install -r requirements.txt
 
-4.**Set up Google API credentials**
+4. **Set up Google API credentials**
 
 # Set Up Google API Credentials
 
