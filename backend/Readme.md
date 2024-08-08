@@ -38,18 +38,16 @@ GProtect leverages advanced AI models from Google’s Gemini suite to detect pot
 
 2. **Create a virtual environment**
  
-  ```bash
+ 
 python -m venv venv
 source venv/bin/activate  # On Windows use `venv\Scripts\activate`
 
-3. **Install dependencies**
+2. **Create a virtual environment**
 
- ```bash
+
 pip install -r requirements.txt
 
-4. **Set up Google API credentials**
-
-# Set Up Google API Credentials
+#4. Set Up Google API Credentials
 
 Follow these steps to obtain and configure your Google API credentials:
 
