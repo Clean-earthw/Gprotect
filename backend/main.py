@@ -63,7 +63,7 @@ safety_settings = [
   }
 ]
 
-model = genai.GenerativeModel(model_name="gemini-pro-vision",
+model = genai.GenerativeModel(model_name="gemini-1.5-flash",
                               generation_config=config,
                               safety_settings=safety_settings)
 
