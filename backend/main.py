@@ -15,19 +15,13 @@ from pip._vendor import cachecontrol
 import requests
 import google.generativeai as genai
 from dotenv import load_dotenv
-from tuned_model_creds import load_creds
 
-
-creds = load_creds()
-
-# creds = load_creds()
 
 load_dotenv()
 GOOGLE_CLIENT_ID = os.environ.get('CLIENT_ID')
 
 genai.configure(
-    api_key=os.getenv("API_KEY"),
-    credentials=creds)
+    api_key=os.getenv("API_KEY"))
 
 app = Flask(__name__)
 app.secret_key = 'XT5PUdwqegbndhgfsbdvH5m79D'
@@ -197,7 +191,7 @@ def tuned_gemini_query():
     query = data.get('query')
 
     model = genai.GenerativeModel(
-        model_name="tunedModels/geminidetectphish-nsw7x3zv20o2",
+        model_name="tunedModels/phish-ei0qk5k69u5o",
         system_instruction="You are a phishing email detection model. You are given the following email and asked to determine if it is a 'Phishing' or a 'Safe' email. Please only give a one word response. The email is as follows:",
     )
 
